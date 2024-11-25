@@ -1,0 +1,5 @@
+.idea/
+.vs/
+.vscode/
+/app/build
+/core/build
