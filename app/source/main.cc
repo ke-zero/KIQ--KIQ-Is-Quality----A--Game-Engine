@@ -1,18 +1,18 @@
 #include <main.h>
-#include <engine.h>
-#include <stdio.h>
+#include <KIQ.h>
+#include <iostream>
 
 int main()
 {
-    std::printf("NAME: %s\nVERSION: VERSION: %s\n", APP_NAME->c_str(), APP_VERSION->c_str());
-    
-    auto engine = alloc<KIQ::Engine>();
+    std::cout << "NAME: " << APP_NAME << "\n VERSION: " << APP_VERSION << "\n";
+
+    ref<Engine> engine = alloc<Engine>();
 
     engine->Init();
 
-    if (engine->IsOpened())
+    if (engine->isOpened)
     {
-        while (engine->IsOpened())
+        while (engine->isOpened)
         {
             engine->Update();
         }

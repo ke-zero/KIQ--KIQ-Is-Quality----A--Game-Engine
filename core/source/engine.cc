@@ -1,11 +1,11 @@
 #include "stdio.h"
-#include "engine.h"
+#include "KIQ.h"
 
-using namespace KIQ;
-
-bool Engine::IsOpened()
+Engine::Engine()
 {
-    return true;
+    this->isOpened = alloc<bool>();
+    this->window = alloc<Window>();
+    this->timer = alloc<Timer>();
 }
 
 void Engine::Init()

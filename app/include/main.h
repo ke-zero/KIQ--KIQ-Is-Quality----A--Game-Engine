@@ -1,6 +1,5 @@
 #pragma once
-#include "engine.h"
-#include <string>
+#include "KIQ.h"
 
-static auto APP_NAME = alloc<std::string>("KIQ, C++ Engine!");
-static auto APP_VERSION = alloc<std::string>("0.0.1");
+static auto APP_NAME = alloc<string>("KIQ, C++ Engine!");
+static auto APP_VERSION = alloc<string>("0.0.1");
